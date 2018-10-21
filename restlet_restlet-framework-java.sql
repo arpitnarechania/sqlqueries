@@ -1,0 +1,1 @@
+select USER from dual

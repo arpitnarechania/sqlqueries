@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS `buttonconfig` ( `device` varchar(15) NOT NULL default '', `instance` tinyint(4) NOT NULL default 0, `type` enum('line','speeddial','service','feature','empty') NOT NULL default 'line', `name` varchar(36) default NULL, `options` varchar(100) default NULL, PRIMARY KEY (`device`,`instance`,`type`), KEY `device` (`device`), FOREIGN KEY (device) REFERENCES sccpdevice(name) ON DELETE CASCADE ON UPDATE CASCADE)
+CREATE TABLE IF NOT EXISTS `buttonconfig` ( `device` varchar(15) NOT NULL default '', `instance` tinyint(4) NOT NULL default '0', `type` enum('line','speeddial','service','feature','empty') NOT NULL default 'line', `name` varchar(36) default NULL, `options` varchar(100) default NULL, PRIMARY KEY (`device`,`instance`,`type`), KEY `device` (`device`), FOREIGN KEY (device) REFERENCES sccpdevice(name) ON DELETE CASCADE ON UPDATE CASCADE)
+CREATE TABLE buttontype ( type 				varchar(9) 	DEFAULT NULL, PRIMARY KEY (type))
+update sccpdevice set audio_tos=0xB8,audio_cos=6,video_tos=0x88,video_cos=5  where audio_tos=NULL
+CREATE TABLE buttonconfig ( device 			varchar(15) 	NOT NULL DEFAULT '', instance 			tinyint(4) 	NOT NULL DEFAULT '0', type 				varchar(9), name 				varchar(36) 	DEFAULT NULL, options			varchar(100) 	DEFAULT NULL, PRIMARY KEY (device,instance), FOREIGN KEY (device) REFERENCES sccpdevice (device), FOREIGN KEY (type) REFERENCES buttontype (type) )
+SELECT * FROM buttonconfig WHERE device=sccpdevice.name ORDER BY instance) bc ) as button, \n");
+UPDATE sccpline SET id = DEFAULT WHERE device=sccpdevice
