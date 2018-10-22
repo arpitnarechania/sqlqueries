@@ -1,0 +1,15 @@
+INSERT INTO FOO VALUES (6, 'foo6')
+Select * from Student
+select s from Student s where s.lastName = 'Last One'
+CREATE TABLE FOO ( id INTEGER IDENTITY PRIMARY KEY, name VARCHAR(30),)
+SELECT * from FOO
+INSERT INTO FOO VALUES (1, 'foo1')
+INSERT INTO FOO VALUES (5, 'foo5')
+INSERT INTO FOO VALUES (3, 'foo3')
+INSERT INTO FOO VALUES (4, 'foo4')
+INSERT INTO FOO VALUES (2, 'foo2')
+INSERT INTO FOO VALUES (8, 'foo8')
+select s from Student s
+INSERT INTO FOO VALUES (7, 'foo7')
+INSERT INTO FOO VALUES (10, 'foo10')
+INSERT INTO FOO VALUES (9, 'foo9')
