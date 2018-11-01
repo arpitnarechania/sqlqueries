@@ -1,0 +1,2 @@
+SELECT * FROM %s LIMIT 1;
+SELECT * FROM %s;
