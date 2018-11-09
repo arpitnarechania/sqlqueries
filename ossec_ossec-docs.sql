@@ -1,0 +1,1 @@
+CREATE TABLE files ( md5sum VARCHAR(32), file VARCHAR(256), time DATETIME )
