@@ -1,0 +1,1 @@
+CREATE INDEX index_qa_local_authority_entries_on_lower_label_and_authority ON qa_local_authority_entries (local_authority_id, lower_label)

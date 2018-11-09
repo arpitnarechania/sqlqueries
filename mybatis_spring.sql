@@ -1,0 +1,23 @@
+INSERT INTO USERS VALUES(#{id}, #{name})
+SELECT * FROM users WHERE id = #{userId}
+insert into employees VALUES ( 1, 'Pocoyo' , 1000, 's1')
+create table foo ( id varchar(80) not null, name varchar(80) not null, constraint pk_user primary key (id))
+insert into employees VALUES ( 4, 'Valentina' , 4000, 's1')
+insert into employees VALUES ( 1, 'Pocoyo' , 1000, 's2')
+create table persons ( person_id integer identity not null primary key, first_name varchar(20), last_name varchar(20), operation_by varchar(64), operation_at timestamp)
+insert into employees VALUES ( 3, 'Eli' , 3000, 's1')
+create table users ( id varchar(80) not null, name varchar(80) not null, constraint pk_user primary key (id))
+create table bar ( id varchar(80) not null, name varchar(80) not null, constraint pk_user primary key (id))
+SELECT * FROM USERS WHERE ID=#{id}
+create table employees ( id integer not null, name varchar(80) not null, salary integer not null, skill varchar(80) not null)
+CREATE TABLE USERS ( id integer not null, name varchar(80) not null)
+insert into users VALUES ( 'u1', 'Pocoyo' )
+insert into users VALUES ( 'u5', 'Taro Yamada' )
+insert into users VALUES ( 'u2', 'Pato' )
+insert into users VALUES ( 'u3', 'Eli' )
+insert into employees VALUES ( 3, 'Eli' , 3000, 's3')
+insert into employees VALUES ( 2, 'Pato' , 2000, 's1')
+insert into employees VALUES ( 3, 'Eli' , 3000, 's2')
+insert into users VALUES ( 'u4', 'Valentina' )
+SELECT * FROM persons ORDER BY person_id
+insert into employees VALUES ( 2, 'Pato' , 2000, 's2')

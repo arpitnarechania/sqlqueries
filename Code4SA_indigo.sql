@@ -1,0 +1,1 @@
+CREATE INDEX indigo_api_document_search_vector_ix ON indigo_api_document 
